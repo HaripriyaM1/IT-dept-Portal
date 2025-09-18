@@ -1,0 +1,278 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+  background: #fff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h1 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.login-container p {
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  padding: 12px 30px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.navbar {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.dashboard {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.dashboard h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #e0f0ff;
+}
+
+.page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page h2 {
+  font-size: 26px;
+  color:white;
+  margin-bottom: 30px;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background: #0072ff;
+  color: white;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: #f0f8ff;
+}
+
+.notes-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.note-item {
+  background: #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 6px solid #0072ff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.note-item h4 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.note-item a {
+  color: #0072ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.note-item a:hover {
+  text-decoration: underline;
+}
+
+.event-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.event-card {
+  background: #fff;
+  padding: 20px 25px;
+  border-left: 6px solid #ff9800;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  transition: 0.3s;
+}
+
+.event-card h4 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.event-card p {
+  margin: 5px 0;
+  color: #444;
+}
+
+.event-card:hover {
+  background: #fff7e6;
+}
+
+.profile-card {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  border: 4px solid #0072ff;
+  width: 120px;
+  height: 120px;
+}
+
+.profile-details p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.notification-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.notification-item {
+  background: #fff;
+  padding: 20px;
+  border-left: 6px solid #4caf50;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s;
+}
+
+.notification-item h4 {
+  margin-bottom: 8px;
+  color: #003366;
+}
+
+.notification-item p {
+  margin: 0;
+  color: #444;
+}
+
+.notification-item:hover {
+  background: #eaffea;
+}
